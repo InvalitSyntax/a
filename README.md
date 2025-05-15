@@ -1,5 +1,6 @@
 # a
 
+```asm
 org 0x400
 ans1: word 0x0000 ;мл
 ans2: word 0xFFC0 ;ст
@@ -56,9 +57,10 @@ next: ld $index
   jump start
   hlt
 
-
+```
 
 -------------------
+```asm
 org 0x6C1
 word 0xFFFF
 word 0xFFFF
@@ -145,3 +147,4 @@ func: ld $curr
   adc $st_num
   st $st_num
   ret
+```
